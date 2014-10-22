@@ -1,0 +1,15 @@
+N=raw_input("Enter number upto which you need to calculate prime\n")
+prime=[2]
+i=3
+while(i<N):
+  j=2
+  flag=0
+	while(j<i):
+		if(i%j):
+			flag=1
+			break
+		j+=1
+	if(flag!=1):
+		prime.append(i)
+	i+=1
+print " ".join(str(e) for e in prime)
